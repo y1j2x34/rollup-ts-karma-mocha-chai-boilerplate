@@ -1,2 +1,10 @@
 # rollup-ts-karma-mocha-chai-boilerplate
-typescript,  rollup + karma + mocha + chai boilerplate
+
+Technology stacks:
+
+- typescript@3.0.1
+- rollup
+- karma
+- mocha + chai
+- istanbul
+- commitlint

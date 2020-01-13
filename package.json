@@ -6,7 +6,7 @@
     "module": "dist/index.esm.js",
     "browser": "dist/index.umd.js",
     "distDir": "dist/",
-    "library": "demo",
+    "library": "boilerplate",
     "engines": {
         "node": ">=8.0"
     },
@@ -25,7 +25,7 @@
         "codecov": "codecov < coverage/cobertura-coverage.xml",
         "test:chromeheadless": "karma start ./karma.debug.conf.js --browsers HeadlessChrome --single-run true",
         "build": "rollup -c rollup.config.js --environment 'production'",
-        "gendoc": "typedoc ./src  --target es5 --out dist/docs --name rmi.js --hideGenerator"
+        "gendoc": "typedoc ./src  --target es5 --out dist/docs --name rollup-ts-karma-mocha-chai-boilerplate --hideGenerator"
     },
     "lint-staged": {
         "{src,test}/**/*.ts": [

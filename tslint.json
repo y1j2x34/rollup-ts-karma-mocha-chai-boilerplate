@@ -12,12 +12,7 @@
         "ordered-imports": false,
         "interface-name": false,
         "max-classes-per-file": false,
-        "prettier": [true, {
-            "singleQuote": true,
-            "parser": "typescript",
-            "tabWidth": 4,
-            "printWidth": 120
-        }],
+        "prettier": [true, "./.prettierrc"],
         "no-namespace": false
     }
 }

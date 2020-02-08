@@ -28,6 +28,10 @@ module.exports = {
         {
             value: 'revert',
             name: 'revert: Revert to a commit'
+        },
+        {
+            value: 'docs',
+            name: 'docs: Add or modify documents'
         }
     ],
     scopes: [],

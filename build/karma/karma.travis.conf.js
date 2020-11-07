@@ -1,10 +1,10 @@
 'use strict';
 const path = require('path');
 
-const plugins = require('./build/rollup.plugins');
+const plugins = require('../rollup/rollup.plugins');
 const rollupPluginIstanbul = require('rollup-plugin-istanbul');
 const baseConfig = require('./karma.base.conf');
-const pkg = require('./package.json');
+const pkg = require('../../package.json');
 
 module.exports = function (config) {
     const coverageIstanbulReporter = {

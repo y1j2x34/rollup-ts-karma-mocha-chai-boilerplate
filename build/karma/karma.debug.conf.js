@@ -1,7 +1,7 @@
 'use strict';
 
 const baseConfig = require('./karma.base.conf');
-const rollupConfig = require('./rollup-debug.config');
+const rollupConfig = require('../rollup/rollup-debug.config');
 
 module.exports = function (config) {
 

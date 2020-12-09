@@ -1,15 +1,16 @@
 'use strict';
 const path = require('path');
 
-const plugins = require('../rollup/rollup.plugins');
+const plugins = require('./build/rollup.plugins');
 const rollupPluginIstanbul = require('rollup-plugin-istanbul');
 const baseConfig = require('./karma.base.conf');
-const pkg = require('../../package.json');
+const pkg = require('./package.json');
+
 
 module.exports = function (config) {
     const coverageIstanbulReporter = {
         reports: ['lcov', 'text-summary', 'cobertura'],
-        dir: path.join(__dirname, 'coverage'),
+        dir: path.join(process.cwd(), 'coverage'),
         skipFilesWithNoCoverage: true
     };
 

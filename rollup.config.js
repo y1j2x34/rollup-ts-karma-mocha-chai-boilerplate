@@ -1,5 +1,5 @@
 const plugins = require('./build/rollup.plugins');
-const pkg = require('../../package.json');
+const pkg = require('./package.json');
 
 function createOutputConfig(file, format, cfg = {}) {
     return Object.assign(
@@ -24,9 +24,7 @@ module.exports = [
         ].map(confs => createOutputConfig(...confs)),
         plugins: [
             plugins.nodeResolve({
-                main: true,
-                browser: true,
-                module: true
+                mainFields: ['main', 'browser', 'jsnext']
             }),
             plugins.commonjs({
                 include: 'node_modules/**',

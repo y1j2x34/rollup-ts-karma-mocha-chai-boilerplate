@@ -91,11 +91,5 @@
         "typedoc": "0.22.5",
         "typescript": "4.4.4"
     },
-    "dependencies": {},
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-commit": "lint-staged"
-        }
-    }
+    "dependencies": {}
 }

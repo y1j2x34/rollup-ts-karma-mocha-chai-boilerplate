@@ -13,6 +13,7 @@
         "test": "test"
     },
     "scripts": {
+        "postinstall": "husky install",
         "release": "standard-version",
         "commit": "commit",
         "lint": " eslint {src,test}/**/*.{js,ts,tsx}",

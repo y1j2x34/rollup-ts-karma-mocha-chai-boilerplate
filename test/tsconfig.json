@@ -4,6 +4,7 @@
         "baseUrl": "./",
         "inlineSourceMap": false,
         "sourceMap": true,
+        "declaration": false,
         "typeRoots": [
             "../src/typings",
             "../node_modules/@types",
